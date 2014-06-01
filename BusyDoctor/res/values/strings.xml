@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Appointify</string>
+    <string name="defaultDoctor">Dr. Vinod Talreja\'s Clinic</string>
+    <string name="request">REQUEST \n APPOINTMENT</string>
+    <string name="history">PATIENT \n HISTORY</string>
+    <string name="clinic">CLINIC \n DETAILS</string>
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+    <string name="home_screen_activity">Home Screen Activity</string>
+    <string name="request_activity">Request Applointment Activity</string>
+    
+    <string name="left_and_right">Left and Right</string> 
+
+    <color name="dark_grey">#444444</color>
+    <color name="light_grey">#999999</color>
+    <color name="grey">#808080</color>
+</resources>

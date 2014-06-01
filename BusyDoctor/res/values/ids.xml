@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<item name="doctor_view" type="id"></item>
+	<item name="icon_appointment" type="id"></item>
+	<item name="icon_history" type="id"></item>
+	<item name="icon_clinic" type="id"></item>
+	
+</resources>

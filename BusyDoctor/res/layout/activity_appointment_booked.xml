@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}"
+    
+    android:orientation="vertical"
+	android:layout_margin="10dp"
+	>
+
+    <TextView android:id="@id/doctor_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="@string/defaultDoctor" 
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+    
+    <View 
+        android:layout_width="match_parent" 
+        android:layout_height="0dp"
+        android:layout_weight="0"
+        android:background="@color/light_grey" />
+    
+    <TextView android:id="@+id/appointment_number"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="24dp"/>
+    
+    <TextView android:id="@+id/appointment_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textSize="14sp"/>
+    
+   <View 
+        android:layout_width="match_parent" 
+        android:layout_height="0dp"
+        android:layout_weight="0"
+        android:background="@color/light_grey" />
+
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="3"
+       android:orientation="horizontal">
+       
+       <Button android:id="@+id/okay_button"
+           android:layout_width="0dp"
+           android:layout_height="80dp"
+           android:layout_weight="1"
+           android:text="Okay"/>
+       
+       <Button android:id="@+id/reminder_button"
+           android:layout_width="0dp"
+           android:layout_height="80dp"
+           android:layout_weight="1"
+           android:text="Create reminder"/>
+       
+   </LinearLayout>
+    
+   
+</LinearLayout>

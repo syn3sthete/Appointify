@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" 
+    
+    android:orientation="vertical"
+	android:layout_margin="10dp"
+	>
+
+    <TextView android:id="@id/doctor_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/defaultDoctor" 
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+
+    <View 
+        android:layout_width="match_parent" 
+        android:layout_height="1.5dp"
+        android:background="@color/light_grey" />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:onClick="requestAppointment">
+        
+        <ImageView android:id="@id/icon_appointment"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            
+            android:contentDescription="@+string/ImageCalender"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_appointment"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/icon_appointment"
+            android:gravity="center"
+            android:text="@string/request"
+            android:layout_alignWithParentIfMissing="true"
+            android:textSize="16sp"
+            android:textColor="@color/dark_grey"/>
+        
+    </RelativeLayout>
+    
+     <View 
+        android:layout_width="match_parent" 
+        android:layout_height="1.5dp"
+        android:background="@color/light_grey" />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+        
+        <ImageView android:id="@id/icon_history"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            
+            android:contentDescription="@+string/ImagePatientHistory"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_medical_history"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/icon_history"
+            android:gravity="center"
+            android:text="@string/history"
+            android:textSize="16sp"
+            android:textColor="@color/dark_grey"/>
+        
+    </RelativeLayout>
+    
+        <View 
+        android:layout_width="match_parent" 
+        android:layout_height="1.5dp"
+        android:background="@color/light_grey" />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+        
+        <ImageView android:id="@id/icon_clinic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            
+            android:contentDescription="@+string/ImageCalender"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_clinic"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/icon_clinic"
+            android:gravity="center"
+            android:text="@string/clinic"
+            android:textSize="16sp"
+            android:textColor="@color/dark_grey"/>
+        
+    </RelativeLayout>
+    
+</LinearLayout>
